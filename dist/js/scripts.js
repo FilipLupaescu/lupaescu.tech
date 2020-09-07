@@ -1,7 +1,7 @@
 /*!
-    * Start Bootstrap - Grayscale v6.0.2 (https://startbootstrap.com/themes/grayscale)
+    * Start Bootstrap - Filip's Website v1.0.0 (https://filiplupaescu.github.io/lupaescu.tech)
     * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+    * Licensed under MIT (https://github.com/StartBootstrap/filip-dottech/blob/master/LICENSE)
     */
     (function ($) {
     "use strict"; // Start of use strict

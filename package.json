@@ -1,7 +1,7 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
-    "version": "6.0.2",
+    "title": "Filip's Website",
+    "name": "filip-dottech",
+    "version": "1.0.0",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -10,9 +10,10 @@
         "build:scss": "node scripts/build-scss.js",
         "clean": "node scripts/clean.js",
         "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "start:debug": "npm run build && node scripts/start-debug.js",
+        "deploy": "gh-pages -d dist" 
     },
-    "description": "A grayscale one page HTML theme for Bootstrap.",
+    "description": "A one page HTML for Filip.",
     "keywords": [
         "css",
         "sass",
@@ -21,11 +22,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/themes/grayscale",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "https://filiplupaescu.github.io/lupaescu.tech",
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
@@ -33,7 +30,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale.git"
+        "url": "https://github.com/FilipLupaescu/lupaescu.tech"
     },
     "dependencies": {
         "bootstrap": "4.5.0"
@@ -43,6 +40,7 @@
         "browser-sync": "^2.26.12",
         "chokidar": "3.4.0",
         "concurrently": "5.2.0",
+        "gh-pages": "^3.1.0",
         "postcss": "7.0.32",
         "prettier": "2.0.5",
         "pug": "3.0.0",
