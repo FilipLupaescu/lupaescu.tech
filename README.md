@@ -1,0 +1,3 @@
+# lupaescu.tech
+
+Learning about JavaScript, node.js, npm and other stuff...
