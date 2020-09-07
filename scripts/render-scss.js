@@ -8,6 +8,7 @@ const sass = require('sass');
 const sh = require('shelljs');
 
 const stylesPath = '../src/scss/styles.scss';
+const normalizePath = './src/scss/normalize.css';
 const destPath = upath.resolve(upath.dirname(__filename), '../dist/css/styles.css');
 
 module.exports = function renderSCSS() {
@@ -29,14 +30,18 @@ module.exports = function renderSCSS() {
             console.warn(warn.toString())
         })
         fs.writeFileSync(destPath, result.css.toString());
+        fs.copyFile(normalizePath, './dist/css/normalize.css', (err) => {
+            if (err) throw err;
+            console.log('normalize.css was copied to /dist');
+          });
     })
+
 
 };
 
 const entryPoint = `/*!
-* Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
-* Copyright 2013-${new Date().getFullYear()} ${packageJSON.author}
-* Licensed under ${packageJSON.license} (https://github.com/StartBootstrap/${packageJSON.name}/blob/master/LICENSE)
+* Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
+* Copyright 2020-${new Date().getFullYear()} ${packageJSON.author}
 */
 @import "${stylesPath}"
 `

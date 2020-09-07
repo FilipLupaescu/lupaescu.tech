@@ -1,7 +1,6 @@
 /*!
-    * Start Bootstrap - Filip's Website v1.0.0 (https://filiplupaescu.github.io/lupaescu.tech)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/filip-dottech/blob/master/LICENSE)
+    * Bootstrap - Filip's Website v1.0.0 (https://filiplupaescu.github.io/lupaescu.tech)
+    * Copyright 2020-2020 Start Bootstrap
     */
     (function ($) {
     "use strict"; // Start of use strict
